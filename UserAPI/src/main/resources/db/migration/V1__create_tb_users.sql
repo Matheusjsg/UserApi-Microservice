@@ -1,0 +1,11 @@
+
+CREATE TABLE tb_users (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    role VARCHAR(50) NOT NULL,
+    verification_Code VARCHAR(50),
+    verified BOOLEAN DEFAULT FALSE
+
+);
